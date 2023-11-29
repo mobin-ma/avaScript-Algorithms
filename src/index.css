@@ -1,0 +1,219 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+.wrrap {
+  max-width: 80rem;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title {
+  width: 100%;
+  text-align: center;
+  border-bottom: 2px solid #80808096;
+  padding: 25px 0;
+  margin: 0 auto;
+}
+
+.toggle {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: .9rem;
+}
+
+.container {
+  width: 70rem;
+  padding: 2rem 1rem;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container .item {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#practice1 h2 {
+  text-shadow: 2px 3px 4px #535bf2;
+  font-size: 2em;
+}
+
+.container .item h4 {
+  font-weight: normal;
+  font-size: 1.1em;
+  line-height: 1.8rem;
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  border-radius: 2rem;
+  background-color: #6866667a;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.content .content-section1, .content-section2 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1rem;
+  overflow: hidden;
+}
+
+.content .content-section1 {
+  border-right: 2px solid #242424;
+  padding-right: 1rem;
+  margin-right: 1rem;
+}
+
+.content .content-section1 div {
+  width: 100%;
+  height: 100%;
+}
+
+.content .content-section1 div section {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.content .content-section1 div section label {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.content .content-section1 div section input {
+  width: 30%;
+  height: 100%; 
+  margin: 0 auto 0 1rem;
+  padding: 0.7rem;
+  font-size: 1em;
+  border-radius: 1rem;
+  border: none;
+}
+
+.content .content-section1 div section input:focus {
+  border: none;
+  outline: none;
+}
+
+.content .content-section2 {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  font-size: 2em;
+}
+
+.content .content-section2 span {
+  width: 100%;
+  white-space: wrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#practice2 h2 {
+  text-shadow: 2px 3px 4px #d253f2;
+  font-size: 2em;
+}
+
+#practice3 h2 {
+  text-shadow: 2px 3px 4px #f2535b;
+  font-size: 2em;
+}
